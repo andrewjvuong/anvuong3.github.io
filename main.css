@@ -10,14 +10,7 @@
 .main {
   width: 100%;
   height: 100%;
-  
-  /* Flexbox properties 
-   * for centering child
-   * elements inside 
-   * this element */
   display: flex;
-  align-items: center;
-  justify-content: center;
 } 
 
 .child {
@@ -30,7 +23,40 @@
     text-decoration: initial;
 }
 
-#square{
+.square{
     height: 200px;
     width: 200px;
+    float:left;
+}
+
+.row{
+    display:flex;
+}
+
+.orange{
+    background-color:orange;
+}
+
+.blue{
+    background-color:blue
+}
+
+.rosybrown{
+    background-color: rosybrown
+}
+
+.yellowgreen{
+    background-color: yellowgreen
+}
+
+.button{
+    background-color:gray;
+    width:1000px;
+    height:50px;
+    float:left;
+    clear:right;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
