@@ -41,3 +41,4 @@ document.getElementById("move-rectangle").onclick = function() {
     moveRectangle(moveDistance);
 
 }
+
