@@ -65,3 +65,16 @@ function startMadLibs() {
 
 
 document.getElementById('StartMadLibs').onclick = startMadLibs;
+
+
+
+
+
+
+
+
+
+
+let value=0;
+
+document.querySelector('#value').innerHTML = value.toString
