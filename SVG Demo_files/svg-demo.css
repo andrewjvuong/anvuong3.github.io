@@ -1,0 +1,11 @@
+#drawing{
+    border: 1px solid black;
+    width: 480px;
+    height: 480px;
+}
+
+#canvas{
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+}

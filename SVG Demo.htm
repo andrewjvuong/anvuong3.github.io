@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/nineFlowers.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <title>
+                SVG Demo
+            </title>
+            <link rel="stylesheet" href="./SVG Demo_files/svg-demo.css">
+        </head>
+        <body>
+            <div id="canvas"><svg id="SvgjsSvg1001" width="600" height="600" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1002"></defs><g id="SvgjsG1008"></g><rect id="SvgjsRect1009" width="10" height="100" fill="Green" x="160" y="180"></rect><circle id="SvgjsCircle1010" r="25" cx="194" cy="205" fill="pink"></circle><circle id="SvgjsCircle1011" r="25" cx="215" cy="165" fill="pink"></circle><circle id="SvgjsCircle1012" r="25" cx="195" cy="130" fill="pink"></circle><circle id="SvgjsCircle1013" r="25" cx="150" cy="125" fill="pink"></circle><circle id="SvgjsCircle1014" r="25" cx="125" cy="165" fill="pink"></circle><circle id="SvgjsCircle1015" r="25" cx="135" cy="205" fill="pink"></circle><circle id="SvgjsCircle1016" r="35" cx="165" cy="175" fill="yellow"></circle></svg></div>
+            <script src="./SVG Demo_files/coordinate-helper.js"></script><div style="position: absolute; top: 0px; right: 0px;">x = 7, y = 126</div>
+            <script src="./SVG Demo_files/svg.js"></script>
+            <script src="./SVG Demo_files/jquery-3.3.1.js"></script>
+            <script src="./SVG Demo_files/nineFlowers.js"></script><svg id="SvgjsSvg1003" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" focusable="false" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1004"></defs><polyline id="SvgjsPolyline1005" points="0,0"></polyline><path id="SvgjsPath1006" d="M0 0 "></path></svg>
+        <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+    </body></html>
