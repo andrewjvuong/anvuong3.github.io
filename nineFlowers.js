@@ -7,44 +7,7 @@ let stemHeight = 100;
 
 let beeRadius = 30;
 
-function beeBody(x,y){
 
-    var bee = draw.group()
-    bee.add(
-        draw.circle(beeRadius).fill('yellow').move(x+30,y),
-    );
-    bee.add(
-        draw.ellipse(50,30).fill('yellow').move(x,y),
-    );
-    bee.add(
-        draw.circle(5).fill('black').move(x+49,y+7),
-    );
-    bee.add(
-        draw.rect(5, 30).fill('black').move(x+20,y),
-    );
-    bee.add(
-        draw.rect(5, 22).fill('black').move(x+7,y+4),
-    );
-    bee.add(
-        draw.rect(5, 22).fill('black').move(x+32,y+4),
-    );
-    bee.add(
-        draw.rect(5, 15).fill('black').move(x+43,y-13),
-    );
-    bee.add(
-        draw.rect(5, 15).fill('black').move(x+50,y-13),
-    );
-    bee.add(
-        draw.ellipse(30,40).fill('gray').move(x+10,y-35)
-    );
-    bee.click(function(){
-        console.log('Bee is being clicked')
-    });
-
-    return bee;
-}
-
-bee = beeBody(2,35);
 
 
 
@@ -102,7 +65,7 @@ function flower(x,y){
 
     flower.click(function(event) {
         console.log("clientX: " + event.clientX + " - clientY: " + event.clientY);
-        bee.animate().move(event.clientX, event.clinetY)
+        bee.animate().move(event.clientX, event.clientY)
     });
 }
 
@@ -139,4 +102,41 @@ function flowerGrid(x,y){
 
 flowerGrid(100,100);
 
+function beeBody(x,y){
 
+    var bee = draw.group()
+    bee.add(
+        draw.circle(beeRadius).fill('yellow').move(x+30,y),
+    );
+    bee.add(
+        draw.ellipse(50,30).fill('yellow').move(x,y),
+    );
+    bee.add(
+        draw.circle(5).fill('black').move(x+49,y+7),
+    );
+    bee.add(
+        draw.rect(5, 30).fill('black').move(x+20,y),
+    );
+    bee.add(
+        draw.rect(5, 22).fill('black').move(x+7,y+4),
+    );
+    bee.add(
+        draw.rect(5, 22).fill('black').move(x+32,y+4),
+    );
+    bee.add(
+        draw.rect(5, 15).fill('black').move(x+43,y-13),
+    );
+    bee.add(
+        draw.rect(5, 15).fill('black').move(x+50,y-13),
+    );
+    bee.add(
+        draw.ellipse(30,40).fill('gray').move(x+10,y-35)
+    );
+    bee.click(function(){
+        console.log('Bee is being clicked')
+    });
+
+    return bee;
+}
+
+bee = beeBody(2,35);
