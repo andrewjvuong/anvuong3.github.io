@@ -13,8 +13,9 @@ const BLACK = '#000';
 
 for (let i = 0; i < rowNumb; i++){
     let rowY = i * blockHeight;
+    let blockPerRow = i + 1;
 
-    for(let j = 0; j < blockNumb; j++) {
+    for(let j = 0; j < blockPerRow; j++) {
         let blockX = j * blockWidth;
 
         let rect = {
