@@ -22,9 +22,16 @@ for (let i = 0; i < rowNumb; i++){
             element: draw.rect(blockWidth, blockHeight),
             color: WHITE
         };
-        rect.element.move((canvasWidth/2) + (blockX - rowY) , canvasHeight/2 - rowY);
+        rect.element.move((canvasWidth/2) + (blockX - rowY) , canvasHeight/2 + rowY);
         rect.element.stroke(BLACK);
         rect.element.fill('blanchedAlmond')
 
+        let rect2 = {
+            element: draw.rect(blockWidth, blockHeight),
+            color: WHITE
+        };
+        rect2.element.move((canvasWidth/2) + (blockX - rowY) , canvasHeight/2 - rowY);
+        rect2.element.stroke(BLACK);
+        rect2.element.fill('blanchedAlmond')
     }
 }
